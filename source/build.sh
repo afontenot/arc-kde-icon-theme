@@ -36,6 +36,11 @@ rm $breeze-$breeze_v/icons/apps/48/vlc.svg
 cp -an $breeze-$breeze_v/icons/apps/48 $pkgname/Arc/apps
 rm $breeze-$breeze_v/icons/apps/64/system-file-manager.svg
 cp -an $breeze-$breeze_v/icons/apps/64 $pkgname/Arc/apps
+rm -r $breeze-$breeze_v/icons/actions/12
+rm -r $breeze-$breeze_v/icons/actions/32
+rm -r $breeze-$breeze_v/icons/actions/32@2x
+rm -r $breeze-$breeze_v/icons/actions/64
+cp -an $breeze-$breeze_v/icons/actions $pkgname/Arc
 cp -an $breeze-$breeze_v/icons/categories $pkgname/Arc
 cp -an $breeze-$breeze_v/icons/devices/64/media-optical* $pkgname/Arc/devices/64
 cp -a $breeze-$breeze_v/icons/emotes $pkgname/Arc
