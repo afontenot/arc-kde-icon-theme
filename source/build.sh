@@ -59,6 +59,9 @@ for dir in $pkgname/Arc/mimetypes/*; do
     cp -an $papirus-$papirus_v/Papirus/64x64/apps/multimedia-photo-viewer.svg $pkgname/Arc/mimetypes/$(basename $dir)/image-x-generic.svg;
     cp -an $papirus-$papirus_v/Papirus/64x64/apps/com.github.artemanufrij.playmyvideos.svg $pkgname/Arc/mimetypes/$(basename $dir)/video-x-generic.svg;
 done
+for dir in $pkgname/Arc/places/*; do
+    ln -s ./folder-videos.png $dir/folder-video.png;
+done
 for dir in $papirus-$papirus_v/Papirus/*; do
     realdir=$(echo $(basename $dir) | sed -r 's/x[0-9]+//g');
     cp $dir/mimetypes/*pkcs* $pkgname/Arc/mimetypes/$realdir;

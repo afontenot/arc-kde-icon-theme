@@ -10,7 +10,7 @@ depends=('gtk-update-icon-cache' 'hicolor-icon-theme')
 optdepends=('arc-gtk-theme: gtk theme of arc')
 options=('!emptydirs' '!strip')
 source=("git+https://github.com/afontenot/${pkgname}.git")
-sha256sums=(SKIP')
+sha256sums=('SKIP')
 
 build() {
     cd "${srcdir}/${pkgname}"
