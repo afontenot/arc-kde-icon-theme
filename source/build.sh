@@ -45,6 +45,8 @@ rm -r $breeze-$breeze_v/icons/status/64
 cp -an $breeze-$breeze_v/icons/status $pkgname/Arc
 
 # fix ups (for missing icons, etc)
+ln -s ../../places/48/folder.png $pkgname/Arc/apps/48/system-file-manager.png
+ln -s ../../places/64/folder.png $pkgname/Arc/apps/64/system-file-manager.png
 cp -an custom/* $pkgname/Arc
 for dir in $pkgname/Arc/mimetypes/*; do
     rm $dir/image-x-generic.png;
@@ -57,7 +59,6 @@ for dir in $pkgname/Arc/mimetypes/*; do
     cp -an $papirus-$papirus_v/Papirus/64x64/apps/multimedia-photo-viewer.svg $pkgname/Arc/mimetypes/$(basename $dir)/image-x-generic.svg;
     cp -an $papirus-$papirus_v/Papirus/64x64/apps/com.github.artemanufrij.playmyvideos.svg $pkgname/Arc/mimetypes/$(basename $dir)/video-x-generic.svg;
 done
-echo "import papirus"
 for dir in $papirus-$papirus_v/Papirus/*; do
     realdir=$(echo $(basename $dir) | sed -r 's/x[0-9]+//g');
     cp $dir/mimetypes/*pkcs* $pkgname/Arc/mimetypes/$realdir;
