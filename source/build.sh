@@ -61,6 +61,7 @@ for dir in $pkgname/Arc/mimetypes/*; do
 done
 for dir in $pkgname/Arc/places/*; do
     ln -s ./folder-videos.png $dir/folder-video.png;
+    ln -s ./folder-music.png $dir/folder-sound.png;
 done
 for dir in $papirus-$papirus_v/Papirus/*; do
     realdir=$(echo $(basename $dir) | sed -r 's/x[0-9]+//g');
