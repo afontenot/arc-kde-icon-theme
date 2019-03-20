@@ -40,7 +40,8 @@ rm -r $breeze-$breeze_v/icons/actions/12
 rm -r $breeze-$breeze_v/icons/actions/32
 rm -r $breeze-$breeze_v/icons/actions/32@2x
 rm -r $breeze-$breeze_v/icons/actions/64
-# deliberately allow clobber here as a test
+# deliberately clobber here as a test
+rm -rf $pkgname/Arc/actions/*
 cp -a $breeze-$breeze_v/icons/actions $pkgname/Arc
 cp -an $breeze-$breeze_v/icons/categories $pkgname/Arc
 cp -an $breeze-$breeze_v/icons/devices/64/media-optical* $pkgname/Arc/devices/64
