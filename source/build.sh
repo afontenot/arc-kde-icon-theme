@@ -1,12 +1,12 @@
 #!/usr/bin/env zsh
 
-export pkgname="arc-kde-icon-theme"
-export arc="arc-icon-theme"
-export arc_v="20161122"
-export breeze="breeze-icons"
-export breeze_v="5.56.0"
-export papirus="papirus-icon-theme"
-export papirus_v="20190302"
+pkgname="arc-kde-icon-theme"
+arc="arc-icon-theme"
+arc_v="20161122"
+breeze="breeze-icons"
+breeze_v="5.56.0"
+papirus="papirus-icon-theme"
+papirus_v="20190302"
 
 # download
 wget https://github.com/horst3180/arc-icon-theme/archive/$arc_v.tar.gz
