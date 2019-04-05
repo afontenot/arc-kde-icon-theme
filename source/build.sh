@@ -50,6 +50,7 @@ cp -a $breeze-$breeze_v/icons/preferences $pkgname/Arc
 cp -a $breeze-$breeze_v/icons/status/64/dialog-password.svg $pkgname/Arc/status/64
 rm -r $breeze-$breeze_v/icons/status/64
 cp -an $breeze-$breeze_v/icons/status $pkgname/Arc
+cp -an $breeze-$breeze_v/icons/emblems $pkgname/Arc
 
 # fix ups (for missing icons, etc)
 ln -s ../../places/48/folder.png $pkgname/Arc/apps/48/system-file-manager.png
