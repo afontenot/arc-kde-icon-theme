@@ -70,17 +70,6 @@ for dir in $pkgname/Arc/places/*; do
     ln -s ./folder-videos.png $dir/folder-video.png;
     ln -s ./folder-music.png $dir/folder-sound.png;
 done
-for dir in $papirus-$papirus_v/Papirus/*; do
-    realdir=$(echo $(basename $dir) | sed -r 's/x[0-9]+//g');
-    cp $dir/mimetypes/*pkcs* $pkgname/Arc/mimetypes/$realdir;
-    cp $dir/mimetypes/*pem* $pkgname/Arc/mimetypes/$realdir;
-    cp $dir/mimetypes/*cert* $pkgname/Arc/mimetypes/$realdir;
-    cp $dir/mimetypes/*pgp* $pkgname/Arc/mimetypes/$realdir;
-    cp $dir/mimetypes/application-x-fictionbook.svg $pkgname/Arc/mimetypes/$realdir;
-    ln -s ./application-x-fictionbook.svg $pkgname/Arc/mimetypes/$realdir/application-x-mobi8-ebook.svg;
-    ln -s ./application-x-fictionbook.svg $pkgname/Arc/mimetypes/$realdir/application-epub+zip.svg;
-    ln -s ./application-pgp-signature.svg $pkgname/Arc/mimetypes/$realdir/application-vnd.ms-publisher.svg;
-done
 
 # create build directory in parent folder
 mv $pkgname/Arc ../Arc-Kde
