@@ -1,6 +1,6 @@
 # Maintainer: Adam Fontenot <fontenot@ucla.edu>
 pkgname=arc-kde-icon-theme
-pkgver=20190320
+pkgver=20200917
 pkgrel=1
 pkgdesc='Arc Icon Theme, modified for KDE compatibility.'
 arch=('any')

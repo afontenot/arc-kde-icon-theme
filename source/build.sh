@@ -4,13 +4,13 @@ pkgname="arc-kde-icon-theme"
 arc="arc-icon-theme"
 arc_v="20161122"
 breeze="breeze-icons"
-breeze_v="5.56.0"
+breeze_v="5.73.0"
 papirus="papirus-icon-theme"
-papirus_v="20190302"
+papirus_v="20200901"
 
 # download
 wget https://github.com/horst3180/arc-icon-theme/archive/$arc_v.tar.gz
-wget https://download.kde.org/stable/frameworks/5.56/$breeze-$breeze_v.tar.xz
+wget https://download.kde.org/stable/frameworks/5.73/$breeze-$breeze_v.tar.xz
 wget https://github.com/PapirusDevelopmentTeam/$papirus/archive/$papirus_v.tar.gz
 
 # extract
